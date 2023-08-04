@@ -81,7 +81,7 @@ function AddToCart() {
 
   const getData = async () => {
     try {
-      const res = await fetch(`${process.env.REACT_APP_BASE_URL}/jewellery/`, {
+      const res = await fetch(`https://golden-sparrow.onrender.com/jewellery/`, {
         method: "GET",
         headers: {
           Authorization: token,
