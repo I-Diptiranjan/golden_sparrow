@@ -141,7 +141,7 @@ function SignUp() {
       };
       console.log(obj);
       const response = await fetch(
-        `${process.env.REACT_APP_BASE_URL}/customer/signup`,
+        `https://golden-sparrow.onrender.com/customer/signup`,
         {
           method: "POST",
           headers: {
