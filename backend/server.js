@@ -6,6 +6,7 @@ const cors = require("cors");
 const { Auth } = require("./middleware/middleware");
 const { cartRoute } = require("./routes/cartroute");
 const { router } = require("./routes/paymentRoute");
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 
@@ -25,7 +26,7 @@ app.get("/", (req, res) => {
   res.send("Hello world Dipti!");
 });
 
-app.listen(8000, async () => {
+app.listen(PORT, async () => {
   try {
     await connection;
     console.log("Server is running");
