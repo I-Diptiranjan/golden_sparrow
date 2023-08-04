@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
   const getData = async () => {
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_BASE_URL}/ourproducts/allproducts`,
+        `https://golden-sparrow.onrender.com/ourproducts/allproducts`,
         {
           method: "GET",
         }
