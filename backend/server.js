@@ -18,7 +18,7 @@ app.use("/customer", userRoute);
 
 app.use("/ourproducts", allproductsroute);
 app.use("/api/payment", router);
-app.use(Auth);
+// app.use(Auth);
 
 app.use("/jewellery", cartRoute);
 
