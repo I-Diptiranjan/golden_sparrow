@@ -20,7 +20,7 @@ export default function Details() {
     if (token) {
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_BASE_URL}/jewellery/addtocart/${id.id}`,
+          `https://golden-sparrow.onrender.com/jewellery/addtocart/${id.id}`,
           {
             method: "POST",
             headers: {
