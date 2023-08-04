@@ -110,7 +110,7 @@ function AddToCart() {
   }
   const handlePayment = async () => {
     try {
-      const orderUrl = "https://golden-sparrow.onrender.com/api/payment/orders";
+      const orderUrl = "http://localhost:8000/api/payment/orders";
       const { data } = await axios.post(orderUrl, { amount: totalPrice });
       console.log(data);
       initPayment(data.data);
@@ -127,7 +127,7 @@ function AddToCart() {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "https://golden-sparrow.onrender.com/api/payment/verify";
+          const verifyUrl = "http://localhost:8000/api/payment/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
         } catch (error) {
