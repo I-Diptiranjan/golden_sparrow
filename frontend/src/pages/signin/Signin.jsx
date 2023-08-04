@@ -104,7 +104,7 @@ function SignIn() {
 
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BASE_URL}/customer/signin`,
+        `https://golden-sparrow.onrender.com/customer/signin`,
         {
           method: "POST",
           headers: {
@@ -132,7 +132,7 @@ function SignIn() {
   };
 
   const handleGoogle = (decoded) => {
-    fetch(`${process.env.REACT_APP_BASE_URL}/customer`, {
+    fetch(`https://golden-sparrow.onrender.com/customer`, {
       method: "GET",
     })
       .then((res) => res.json())
