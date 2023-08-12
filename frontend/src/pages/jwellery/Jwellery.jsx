@@ -134,7 +134,7 @@ const Jwellery = () => {
   useEffect(() => {
     getData();
     handlePage(page);
-  }, []);
+  }, [data]);
 
   useEffect(() => {
     getData();
